@@ -1,0 +1,135 @@
+/* 样式重置 */
+.ranking-list + .layui-table-view {
+  border: none;
+}
+.ranking-list + .layui-table-view .layui-table-cell {
+  height: auto;
+  padding: 0;
+}
+.ranking-list + .layui-table-view .layui-table-header {
+  display: none;
+}
+.ranking-list + .layui-table-view td {
+  border: none;
+}
+
+
+.ranking-list {
+  position: relative;
+}
+
+
+/* 表格样式 */
+.ranking-list + .layui-table-view tr {
+  border-bottom: 1px dashed #bfbfbf;
+  font-size: 12px;
+  line-height: 17px;
+}
+.ranking-list + .layui-table-view tr{
+  margin-top: 2px;
+}
+.ranking-list + .layui-table-view tr td {
+  padding: 15px 0;
+  font-size: 12px;
+  line-height: 17px;
+  width: auto;
+}
+.ranking-list + .layui-table-view tr td:first-child {
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+.ranking-list + .layui-table-view tr .cell-item{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.ranking-list + .layui-table-view tr .cell-item + .cell-item {
+  margin-top: 2px;
+}
+.ranking-list + .layui-table-view tr .cell-item .cell-content {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 奖牌 */
+.ranking-list + .layui-table-view .ranking-list-medal {
+  width: 30px;
+  height: 30px;
+  margin-right: 12px;
+}
+.ranking-list + .layui-table-view .ranking-list-item-new {
+  width: 17px;
+  height: 18px;
+  margin-left: 10px;
+}
+.ranking-list + .layui-table-view .ranking-list-item-index {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666666;
+  background: #f0f0f0;
+  text-align: center;
+  margin-left: 3px;
+  margin-right: 15px;
+}
+
+/* 名称、值 */
+.ranking-list + .layui-table-view .ranking-list__label {
+  color: #b0b0b0;
+  margin-left: 5px;
+}
+.ranking-list + .layui-table-view .ranking-list__value {
+  color: #333333;
+  margin-left: 5px;
+}
+.ranking-list + .layui-table-view .ranking-list__value.increment-up {
+  color: #00E800;
+}
+.ranking-list + .layui-table-view .ranking-list__value.increment-down {
+  color: #E02020;
+}
+.ranking-list + .layui-table-view .ranking-list__value .svg-icon {
+  margin-left: 2px;
+  width: 9px;
+  height: 9px;
+}
+
+
+
+/* loding */
+.ranking-list .ranking-list__loding-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  opacity: 0.01;
+}
+.ranking-list .ranking-list__loding {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 37px;
+  height: 37px;
+  background: 0 0;
+  margin: auto;
+  opacity: 1;
+}
+.ranking-list .ranking-list__loding::after {
+  display: inline-block;
+  content: '';
+  width: 37px;
+  height: 37px;
+  background: url(../images/loading-1.gif) no-repeat;
+} 

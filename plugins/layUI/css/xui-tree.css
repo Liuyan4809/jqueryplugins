@@ -1,0 +1,28 @@
+/*重写了layui-tree的样式*/
+.layui-tree-box {
+	border-left: 1px solid rgb(231,235,237);
+	border-right: 1px solid rgb(231,235,237);
+}
+.layui-tree i:nth-child(1) {
+	display: none;
+}
+.layui-tree li {
+	line-height: 38px;
+}
+.layui-tree > li {
+	border-bottom: 1px solid rgb(231,235,237);
+}
+.layui-tree > li:first-of-type {
+	border-top: 1px solid rgb(231,235,237);
+}
+.layui-tree li > a:first-child {
+	margin-left: 22px;
+}
+.layui-tree ul li {
+	border-top: 1px solid rgb(231,235,237);
+}
+
+.layui-form-checkbox .layui-icon {
+	padding-left: 0px!important;
+	margin-left: 10px;
+}

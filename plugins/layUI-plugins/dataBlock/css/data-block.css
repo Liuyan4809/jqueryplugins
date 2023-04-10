@@ -1,0 +1,169 @@
+.data-block {
+  position: relative;
+  padding: 15px 14px 13px 23px;
+  border-radius: 3px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(32,32,32,0.10);  
+}
+
+.data-block .data-block__title {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.data-block .data-block__content-warp {
+  display: flex;
+  margin-top: 22px;
+}
+
+.data-block .data-block__data-wrap {
+  display: inline-block;
+  flex-grow: 1;
+  padding: 0 10px;
+  height: 100%;
+  text-align: left;
+}
+.data-block .data-block__data-wrap + .data-block__data-wrap {
+  text-align: center;
+}
+.data-block .swiper-slide + .swiper-slide .data-block__data-wrap {
+}
+.data-block .swiper-slide + .swiper-slide .data-block__data-wrap .data-block__data-wrap-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  content: '';
+  border-left: 1px dashed #bfbfbf;
+}
+.data-block .swiper-slide:last-child .data-block__data-wrap:last-child {
+  padding-right: 36px;
+}
+
+.data-block .data-block__data {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+  text-align: left;
+}
+
+.data-block .swiper-slide + .swiper-slide .data-block__data.data-block__data--addition::before {
+  display: none;
+}
+
+.data-block .data-block__data-item {
+  margin-top: 5px;
+  white-space: nowrap;
+}
+.data-block .data-block__data-item:first-child {
+  margin-top: 0px;
+}
+
+.data-block .data-block__data-item--v1 + .data-block__data-item--v1 {
+  margin-top: 18px;
+}
+
+.data-block .data-block__data-item--increment-down .data-block__value{
+  color: #E02020;
+}
+.data-block .data-block__data-item--increment-up .data-block__value{
+  color: #00E800;
+}
+
+.data-block .data-block__label, .data-block .data-block__value {
+  font-size: 12px;
+  line-height: 17px;
+}
+.data-block .data-block__label {
+  color: #B0B0B0;
+}
+.data-block .data-block__data-item--v1 .data-block__label {
+  display: block;
+  font-size: 14px;
+  color: #666666;
+  line-height: 20px;
+}
+.data-block .data-block__value {
+  color: #333333;
+  margin-left: 9px;
+}
+.data-block .data-block__value .iconfont {
+  font-size: 12px;
+  line-height: 17px;
+  vertical-align: top;
+}
+.data-block .data-block__data-item--v1 .data-block__value {
+  display: block;
+  margin-top: 3px;
+  margin-left: 0px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.data-block .data-block__data-item--v1 .data-block__value .iconfont {
+  font-size: 16px;
+  line-height: 22px;
+}
+/* 只有一个1级展示项，需要重点强调 */
+.data-block .data-block__data--only-one-level-1 .data-block__data-item--v1 .data-block__value {
+  margin-top: 12px;
+  font-size: 18px;
+  line-height: 25px;
+}
+.data-block .data-block__data-item--v1  + .data-block__data-item--v2 {
+  margin-top: 12px;
+}
+
+
+
+/* loding */
+.data-block .data-block__loding-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  opacity: 0.01;
+}
+.data-block .data-block__loding {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 37px;
+  height: 37px;
+  background: 0 0;
+  margin: auto;
+  opacity: 1;
+}
+.data-block .data-block__loding::after {
+  display: inline-block;
+  content: '';
+  width: 37px;
+  height: 37px;
+  background: url(../images/loading-1.gif) no-repeat;
+}
+
+
+/*  如果不指定高度，滑动的单元不会充满容器 */
+.data-block .swiper-wrapper {
+  height: 110px;
+}
+
+.data-block .swiper-slide {
+  display: flex;
+  width: auto;
+  flex: 1;
+}
+
+.data-block .iconfont {
+  vertical-align: bottom;
+}
+.data-block .icon-tishixinxi {
+  margin-left: 2px;
+}
+
